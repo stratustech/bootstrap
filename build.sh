@@ -56,7 +56,7 @@ fi
 npm install
 
 # run the actual UI build
-make boostrap
+make bootstrap
 
 # Just make sure this sucker exists and is in the expected format
 # tar tzf assets.tgz >/dev/null
