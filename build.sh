@@ -57,7 +57,7 @@ npm install
 
 # run the actual UI build
 # make bootstrap-css
-recess ./less/bootstrap.less --compile
+./node_modules/.bin/recess ./less/bootstrap.less --compile
 
 # Just make sure this sucker exists and is in the expected format
 # tar tzf assets.tgz >/dev/null
