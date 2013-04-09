@@ -86,10 +86,11 @@ bootstrap-css: bootstrap/css/*.css
 
 bootstrap/css/*.css: less/*.less
 	mkdir -p bootstrap/css
-	./node_modules/.bin/recess --compile ${BOOTSTRAP_LESS} > bootstrap/css/bootstrap.css
-	./node_modules/.bin/recess --compress ${BOOTSTRAP_LESS} > bootstrap/css/bootstrap.min.css
-	./node_modules/.bin/recess --compile ${BOOTSTRAP_RESPONSIVE_LESS} > bootstrap/css/bootstrap-responsive.css
-	./node_modules/.bin/recess --compress ${BOOTSTRAP_RESPONSIVE_LESS} > bootstrap/css/bootstrap-responsive.min.css
+	./node_modules/.bin/recess --compile ${BOOTSTRAP_LESS}
+#	./node_modules/.bin/recess --compile ${BOOTSTRAP_LESS} > bootstrap/css/bootstrap.css
+#	./node_modules/.bin/recess --compress ${BOOTSTRAP_LESS} > bootstrap/css/bootstrap.min.css
+#	./node_modules/.bin/recess --compile ${BOOTSTRAP_RESPONSIVE_LESS} > bootstrap/css/bootstrap-responsive.css
+#	./node_modules/.bin/recess --compress ${BOOTSTRAP_RESPONSIVE_LESS} > bootstrap/css/bootstrap-responsive.min.css
 
 #
 # IMAGES
